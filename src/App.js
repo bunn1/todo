@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
+import Home from '.components/Home';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -21,7 +22,10 @@ function App() {
             }
           />
           <Route path="/todo" element={<ToDo />} />
-          <Route path="/login" element={<Login />} />
+          <Route
+            path="/login"
+            element={<Login setLoggedIn={setLoggedIn} setEmail={setEmail} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
