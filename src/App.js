@@ -1,7 +1,9 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
-import Home from '.components/Home';
+import React, { useState } from 'react';
+import Home from './components/Home.js';
+import Login from './components/Login.js';
+import ToDo from './components/ToDo.js';
 
 function App() {
   const [email, setEmail] = useState('');
