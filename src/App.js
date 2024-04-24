@@ -20,6 +20,7 @@ function App() {
               />
             }
           />
+          <Route path="/todo" element={<ToDo />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
