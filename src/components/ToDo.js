@@ -32,11 +32,38 @@ const ToDo = () => {
     );
   };
 
+  const completeTask = (taskToComplete) => {
+    setTodoList(
+      toDoList.map((task) => {
+        if (task.task === taskToComplete) {
+          return { ...task, completed: !task.completed };
+        }
+        return task;
+      })
+    );
+  };
+
+  }
+
   const handleEdit = (task) => {
     const foundTask = toDoList.find((t) => t.task === task);
     if (foundTask) {
       setEditTask(foundTask);
       setCurrentTask(foundTask.task);
+    }
+  };
+
+  const handleSave = (task) => {
+    if (editTask) {
+      const updatedTasks = toDoList.map((task) => {
+        if (task.task === editTask.task) {
+          return { ...task, task: currentTask };
+        }
+        return task;
+      });
+      setTodoList(updatedTasks);
+      setEditTask(null);
+      setCurrentTask('');
     }
   };
 
