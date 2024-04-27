@@ -6,11 +6,10 @@ const Home = (props) => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    if (!loggedIn) {
-      navigate('/login');
-    } else {
+    if (loggedIn) {
       setLoggedIn(false);
-      navigate('/');
+    } else {
+      navigate('/login');
     }
   };
 
