@@ -43,8 +43,6 @@ const ToDo = () => {
     );
   };
 
-  }
-
   const handleEdit = (task) => {
     const foundTask = toDoList.find((t) => t.task === task);
     if (foundTask) {
