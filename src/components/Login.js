@@ -30,8 +30,6 @@ const Login = (props) => {
     const isEmailValid = validateEmail(email);
     const isPasswordValid = validatePassword(password);
     if (isEmailValid && isPasswordValid) {
-      props.setLoggedIn(true);
-      props.setEmail(email);
       navigate('/todo');
     }
   };
