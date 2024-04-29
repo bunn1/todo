@@ -35,34 +35,36 @@ const Login = (props) => {
   };
 
   return (
-    <div className={'mainContainer'}>
-      <div className={'titleContainer'}>
-        <h1>Login To The ToDo App</h1>
+    <div className="mainContainer h-screen flex flex-col justify-center items-center bg-[#252422]">
+      <div className="titleContainer p-5 shadow-md rounded-md max-w-md bg-[#fffcf2] text-3xl">
+        <h1 className="rubrik text-center pt-4 pb-4 pl-6 pr-6 text-[#252422]">
+          Login To The ToDo App
+        </h1>
       </div>
       <br />
-      <div className={'inputContainer'}>
+      <div className="inputContainer p-5 shadow-md rounded-md max-w-md bg-[#fffcf2]">
         <input
           value={email}
           placeholder="Enter your email here"
           onChange={(ev) => setEmail(ev.target.value)}
-          className={'inputBox'}
+          className="inputBox rounded-md p-2 mb-2 focus:outline-none"
         />
-        <label className="errorLabel">{emailError}</label>
+        <label className="errorLabel ml-1">{emailError}</label>
       </div>
       <br />
-      <div className={'inputContainer'}>
+      <div className="inputContainer p-4 rounded-md max-w-md bg-[#fffcf2]">
         <input
           value={password}
           placeholder="Enter your password here"
           onChange={(ev) => setPassword(ev.target.value)}
-          className={'inputBox'}
+          className="inputBox rounded-md p-2 mb-2 focus:outline-none"
         />
-        <label className="errorLabel">{passwordError}</label>
+        <label className="errorLabel ml-1">{passwordError}</label>
       </div>
       <br />
       <div className={'inputContainer'}>
         <input
-          className={'inputButton'}
+          className="inputButton bg-[#eb5e28] rounded-md px-14 py-3 mt-2 text-white cursor-pointer hover:bg-[#d6492f]"
           type="button"
           onClick={onButtonClick}
           value={'Log in'}
