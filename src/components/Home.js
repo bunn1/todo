@@ -14,17 +14,17 @@ const Home = (props) => {
   };
 
   return (
-    <div className="mainContainer">
-      <div className="">
-        <h1>Welcome!</h1>
+    <div className="mainContainer h-screen bg-[#ccc5b9] flex flex-col items-center justify-center">
+      <div className="titleContainer p-5 shadow-md rounded-md max-w-md bg-[#fffcf2] text-3xl">
+        <h1 className="text-[#252422] mb-4 mt-4">Welcome To My ToDo!</h1>
       </div>
 
-      <div className="">
+      <div className="buttonContainer">
         <input
-          className={'inputButton'}
+          className="inputButton bg-[#eb5e28] rounded-md px-14 py-4 mt-14 text-white text-lg cursor-pointer hover:bg-[#d6492f]"
           type="button"
           onClick={handleButtonClick}
-          value={'To Do App Log In'}
+          value={'Log In ToDo'}
         />
         {loggedIn ? <div>Your email address is {email}</div> : <div />}
       </div>
