@@ -70,7 +70,7 @@ const ToDo = () => {
   return (
     <div className="mainContainer min-h-screen flex justify-center items-center bg-[#403d39]">
       <div className="container pt-10 pb-10 rounded-md max-w-lg bg-[#fffcf2]">
-        <h1 className="rubrik text-2xl text-[#252422] pt-4 pb-4">
+        <h1 className="rubrik text-2xl text-[#252422] pt-4 pb-4 text-center">
           To Do List!
         </h1>
         <div className="containerTwo flex flex-col items-center w-full h-full p-4">
