@@ -17,9 +17,9 @@ git clone https://github.com/bunn1/todo.git
 cd todo
 
 ## Installing dependencies
-In the terminal 
+In the terminal write
 npm install
 
 ## Run project
-In the terminal 
+In the terminal write
 npm start
